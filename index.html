@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carelibro</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/formularios.css">
+</head>
+
+<body>
+  <!-- Lado izquierdo -->
+  <div class="left-side">
+    <!-- Login -->
+    <h2>FACEBOOK</h2>
+    <form id="loginForm" method="post">
+      <input type="text" id="username" name="username" placeholder="Usuario">
+      <br>
+      <input type="password" id="password" name="password" placeholder="Contraseña">
+      <br><br>
+      <input type="submit" class="btn btn-primary btn-block btn-large" value="Iniciar sesión">
+      <input type="button" class="btn btn-second btn-block btn-large" value="Crear cuenta">
+    </form>
+  </div>
+
+  <!-- Lado central -->
+  <div class="center-side">
+    <div id="story-controls">
+      <button id="prev-story">&larr;</button>
+      <button id="next-story">&rarr;</button>
+    </div>
+    <div id="stories">
+      <div class="story">
+        <img alt="Story image">
+        <div class="story-content">
+          <!-- Historia -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lado derecho -->
+  <div class="right-side">
+    <!-- Formulario -->
+    <form id="storyForm" method="post">
+      <input type="text" id="name" name="name" placeholder="Nombre">
+      <br>
+      <input type="text" id="imageURL" name="imageURL" placeholder="Imagen">
+      <input type="hidden" id="time" name="time">
+      <br><br>
+      <input type="submit" class="btn btn-primary btn-block btn-large" value="Agregar">
+    </form>
+  </div>
+
+  <script src="/js/stories.script.js"></script>
+  <script src="/js/stories.form.js"></script>
+  <script src="/js/stories.controls.js"></script>
+  <script src="/js/login.js"></script>
+</body>
+
+</html>
